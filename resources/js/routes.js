@@ -8,8 +8,13 @@ import Typography from './components/Typography'
 // second section
 import Mascot from './components/Mascot'
 import Illustrations from './components/Illustrations'
-import LoadersAndAnimations from './components/LoadersAndAnimations'
 import Wallpapers from './components/Wallpapers'
+
+// third section
+import SiteStats from './components/SiteStats'
+
+let LoadersAndAnimations = () =>
+    import(/* webpackChunkName: "loaders" */ './components/LoadersAndAnimations');
 
 export default {
     mode: 'history',
@@ -42,7 +47,7 @@ export default {
             component: Typography
         },
 
-        // section section
+        // second section
         {
             path: '/mascot',
             component: Mascot
@@ -61,6 +66,12 @@ export default {
         {
             path: '/wallpapers',
             component: Wallpapers
+        },
+
+        // third section
+        {
+            path: '/site-stats',
+            component: SiteStats
         }
 
     ]

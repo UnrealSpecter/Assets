@@ -31,14 +31,14 @@
                 <!-- HEADER? -->
                 <header class="py-6">
 
-                    <h1>Laracasts</h1>
+                    <h1 class="text-5xl font-bold">Laracasts</h1>
 
                 </header>
 
                 <!-- MAIN WEBSITE SECTION? -->
                 <main class="flex">
 
-                    <aside class="w-1/5 pt-8">
+                    <aside class="w-64 pt-8">
 
                         <section class="mb-8">
 
@@ -53,7 +53,7 @@
 
                         </section>
 
-                        <section>
+                        <section class="mb-8">
 
                             <h5 class="uppercase font-bold mb-4 text-base">Doodles<h5>
 
@@ -62,6 +62,16 @@
                                 <li class="text-sm pb-4"><router-link class="text-black" to="/illustrations">Illustrations</router-link></li>
                                 <li class="text-sm pb-4"><router-link class="text-black" to="/loaders-and-animations">Loaders and Animations</router-link></li>
                                 <li class="text-sm pb-4"><router-link class="text-black" to="/wallpapers">Wallpapers</router-link></li>
+                            </ul>
+
+                        </section>
+
+                        <section>
+
+                            <h5 class="uppercase font-bold mb-4 text-base">Stats<h5>
+
+                            <ul>
+                                <li class="text-sm pb-4"><router-link class="text-black" to="/site-stats">Site Stats</router-link></li>
                             </ul>
 
                         </section>
