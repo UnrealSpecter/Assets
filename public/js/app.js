@@ -1796,9 +1796,37 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {},
+  data: function data() {
+    widthClass: null;
+
+    return {
+      classes: {
+        flex: ['flex', 'flex-row', 'flex-col'],
+        width: ['.w-0', '.w-1', '.w-2', '.w-3', '.w-4', '.w-5', '.w-6', '.w-8', '.w-10', '.w-12', '.w-16', '.w-20', '.w-24', '.w-32', '.w-40', '.w-48', '.w-56', '.w-64', '.w-auto', '.w-p', '.w-1/4', '.w-1/3', '.w-2/3', '.w-1/5', '.w-2/5', '.w-3/5', '.w-1/5', '.w-2/5', '.w-3/5', '.w-4/5', '.w-1/6', '.w-2/6', '.w-3/6', '.w-4/6', '.w-5/6', '.w-2/12', '.w-3/12', '.w-4/12', '.w-5/12', '.w-6/12', '.w-7/12', '.w-8/12', '.w-9/12', '.w-10/12', '.w-11/12', '.w-full', '.w-screen']
+      }
+    };
+  },
   methods: {
+    applySelectedWidth: function applySelectedWidth(width) {
+      alert();
+      this.selectedWidth = width;
+      console.log(this.selectedWidth);
+    },
     addFlex: function addFlex() {
       $('.building-block').toggleClass('flex justify-center items-center');
     },
@@ -13072,6 +13100,48 @@ var render = function() {
         ),
         _vm._v(" "),
         _c(
+          "select",
+          {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.widthClass,
+                expression: "widthClass"
+              }
+            ],
+            staticClass: "border p-5 font-bold border-color-white shadow-md",
+            attrs: { name: "test" },
+            on: {
+              change: [
+                function($event) {
+                  var $$selectedVal = Array.prototype.filter
+                    .call($event.target.options, function(o) {
+                      return o.selected
+                    })
+                    .map(function(o) {
+                      var val = "_value" in o ? o._value : o.value
+                      return val
+                    })
+                  _vm.widthClass = $event.target.multiple
+                    ? $$selectedVal
+                    : $$selectedVal[0]
+                },
+                function($event) {
+                  return _vm.applySelectedWidth(_vm.widthClass)
+                }
+              ]
+            }
+          },
+          _vm._l(_vm.classes.width, function(tailwindClass) {
+            return _c("option", { domProps: { value: tailwindClass } }, [
+              _vm._v(_vm._s(tailwindClass))
+            ])
+          }),
+          0
+        ),
+        _vm._v(" "),
+        _c(
           "button",
           {
             staticClass: "border p-5 font-bold border-color-white shadow-md",
@@ -13177,7 +13247,18 @@ var render = function() {
       ]
     ),
     _vm._v(" "),
-    _vm._m(0)
+    _vm._m(0),
+    _vm._v(" "),
+    _c("p", [_vm._v("applied class")]),
+    _vm._v(" "),
+    _c(
+      "div",
+      {
+        staticClass:
+          "text-xl mb-10 shadow-md w-full border p-10 border-color-white"
+      },
+      [_vm._v("\n        sjdoij\n    ")]
+    )
   ])
 }
 var staticRenderFns = [
@@ -28484,8 +28565,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! F:\Code\Projects\assets\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! F:\Code\Projects\assets\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\code\Projects\assets\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\code\Projects\assets\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
