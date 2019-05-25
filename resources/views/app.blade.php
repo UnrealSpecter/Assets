@@ -129,6 +129,17 @@
 
                         </section>
 
+                        <!-- TESTS -->
+                        <section class="mb-10">
+
+                            <h5 class="uppercase font-bold mb-5 text-3xl" style="letter-spacing: 6px;">Tests<h5>
+
+                            <ul>
+                                <li class="text-sm pb-4"><router-link class="kodchasan text-lg" to="/blog">Blog Component</router-link></li>
+                            </ul>
+
+                        </section>
+
                         <!-- STATS -->
                         <!-- <section>
 

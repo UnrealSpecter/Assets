@@ -3,6 +3,7 @@ import NotFound404 from './components/NotFound404'
 //first section
 import TheTheory from './components/TheTheory'
 import Card from './components/Card'
+import Blog from './components/Blog'
 
 // import Colors from './components/Colors'
 // import Logo from './components/Logo'
@@ -40,6 +41,11 @@ export default {
         {
             path: '/card',
             component: Card
+        },
+
+        {
+            path: '/blog',
+            component: Blog
         },
         // {
         //     path: '/',
