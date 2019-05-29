@@ -28,7 +28,24 @@
                 ],
             }
         },
-        mounted() {},
+        mounted() {
+
+            axios.get('api/blogs').then(response => {
+
+                response.data.forEach((data) => {
+
+                    this.blogs.push({
+                        id : data.title,
+                        name : data.summary,
+                        publishDate : data.publishDate,
+                        body: data.body
+                    })
+
+                })
+
+            })
+
+        },
     }
 
 </script>

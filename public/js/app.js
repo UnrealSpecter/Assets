@@ -28725,13 +28725,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-<<<<<<< HEAD
 __webpack_require__(/*! /home/vagrant/code/assets/resources/js/app.js */"./resources/js/app.js");
 module.exports = __webpack_require__(/*! /home/vagrant/code/assets/resources/sass/app.scss */"./resources/sass/app.scss");
-=======
-__webpack_require__(/*! C:\code\Projects\assets\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\code\Projects\assets\resources\sass\app.scss */"./resources/sass/app.scss");
->>>>>>> b12e05d49ad9e2fe30b42e2442058cd9179799c2
 
 
 /***/ })
